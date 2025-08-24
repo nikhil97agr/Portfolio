@@ -1,3 +1,24 @@
+import Java from '../assets/skills/java.png';
+import Python from '../assets/skills/python.png';
+import JavaScript from '../assets/skills/javascript.png';
+import TypeScript from '../assets/skills/typescript.png';
+import SpringBoot from '../assets/skills/springboot.png';
+import Hibernate from '../assets/skills/hibernate.png';
+import ReactJS from '../assets/skills/react.png';
+import Flask from '../assets/skills/flask.svg';
+import MySQL from '../assets/skills/mysql.png';
+import DB2 from '../assets/skills/db2.png';
+import PostgreSQL from '../assets/skills/postgresql.svg';
+import Github from '../assets/skills/git.webp';
+import BitBucket from '../assets/skills/bitbucket.png';
+import Jenkins from '../assets/skills/jenkins.jpeg';
+import Jira from '../assets/skills/jira.jpeg';
+import Redis from '../assets/skills/redis.png';
+import HTML from '../assets/skills/html.png';
+import Windows from '../assets/skills/windows.png';
+import Linux from '../assets/skills/linux.png';
+
+
 
 
 
@@ -31,6 +52,16 @@ export interface BestPerformance {
     total: number;
     contest: string;
     rankList: string;
+}
+
+export interface Skill {
+    title: string;
+    skills: SkillType[];
+}
+
+export interface SkillType {
+    title: string;
+    image?: string;
 }
 
 
@@ -327,3 +358,60 @@ export const COMPETITIVE_BADGES: CompetitiveProgramming[] = [
         ]
     }
 ];
+
+
+export const SKILLS: Skill[] = [
+    {
+        title: 'Programming Languages',
+        skills: [
+            { title: "Java", image: Java },
+            { title: "Python", image: Python },
+            { title: "Javascript", image: JavaScript },
+            { title: "Typescript", image: TypeScript }
+        ]
+    },
+    {
+        title: "Frameworks",
+        skills: [
+            { title: "Spring Boot", image: SpringBoot },
+            { title: "Hibernate", image: Hibernate },
+            { title: "React JS", image: ReactJS },
+            { title: "Flask", image: Flask }
+        ]
+    },
+    {
+        title: "Database",
+        skills: [
+            { title: "MySQL", image: MySQL },
+            { title: "DB2", image: DB2 },
+            { title: "PostgreSQL", image: PostgreSQL }
+        ]
+    },
+    {
+        title: "Tools and Technologies",
+        skills: [
+            { title: "Github", image: Github },
+            { title: "BitBucket", image: BitBucket },
+            { title: "Jenkins", image: Jenkins },
+            { title: "Jira", image: Jira },
+            { title: "Redis", image: Redis },
+            { title: "HTML", image: HTML }
+        ]
+    },
+    {
+        title: "Operating Systems",
+        skills: [
+            { title: "Windows", image: Windows },
+            { title: "Linux", image: Linux }
+        ]
+    },
+    {
+        title: "Other",
+        skills: [
+            { title: "Data Structures and Algorithms" },
+            { title: "System Design" },
+            { title: "Test Driven Development" },
+            { title: "Mentorship" }
+        ]
+    }
+]
