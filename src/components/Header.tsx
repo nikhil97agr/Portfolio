@@ -21,8 +21,10 @@ export const Header = () => (
 
             <NavLink href="#about">About</NavLink>
             <NavLink href="#experience">Experience</NavLink>
-            <NavLink href="#education">Education</NavLink>
+            <NavLink href='#skills'>Skills</NavLink>
             <NavLink href="#cp">Competitive Programming</NavLink>
+            <NavLink href="#education">Education</NavLink>
+
         </Toolbar>
     </AppBar>
 );
