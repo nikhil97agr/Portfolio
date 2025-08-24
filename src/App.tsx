@@ -6,6 +6,7 @@ import { About } from "./sections/About";
 import { ExperienceList } from "./sections/experience/ExperienceList";
 import { EducationList } from "./sections/EducationList";
 import { CompetitiveProgrammingList } from "./sections/competitive-programming/CompetitiveProgrammingList";
+import { SkillList } from "./sections/skill/SkillList";
 
 
 const BackgroundGlow: React.FC = () => (
@@ -50,6 +51,7 @@ export const App = () => (
 
         <About />
         <ExperienceList />
+        <SkillList />
         <CompetitiveProgrammingList />
         <EducationList />
 

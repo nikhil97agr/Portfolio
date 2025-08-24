@@ -5,7 +5,7 @@ import { Section } from "../components/Section";
 import { EDUCATIONS } from "../data";
 
 
-export const EducationList: React.FC = () => (
+export const EducationList = () => (
     <Section id="education" title="Education">
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" }, gap: 2 }}>
             {EDUCATIONS.map((ed) => (
