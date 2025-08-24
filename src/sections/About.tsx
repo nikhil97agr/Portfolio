@@ -1,8 +1,6 @@
-import React from "react";
-import { Box, Chip, Divider, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { NeonCard } from "../components/NeonCard";
 import { Section } from "../components/Section";
-import { alpha } from "@mui/material/styles";
 
 
 export const About = () => (
@@ -12,14 +10,13 @@ export const About = () => (
                 Software Engineer • Backend
             </Typography>
             <Typography variant="body1" sx={{ mb: 2 }}>
-                Software engineer with 5 years of experience in building scalable backend solutions, UI, automation tools, and customer-facing monitoring solutions. I specialize in Java development and delivering high-impact backend services with a strong focus on code quality, reusability, scalability, and performance.
+                Backend Software Engineer with 4+ years of experience building scalable solutions using Java, Spring Boot, and
+                MySQL databases. Built REST APIs, automated server monitoring by saving 100% manual effort, and
+                maintained 80%+ test coverage via SonarQube in CI/CD pipelines. Building React.js dashboards for real time observability used
+                by linode, database and other Akamai cloud service customers. Strong problem solver with 2400+ LeetCode
+                problems, Guardian badge (Top 1%), and top-350 global ranks in contests on LeetCode, CodeChef, and Codeforces.
             </Typography>
-            {/* <Divider sx={{ my: 2 }} />
-            <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-                {["React", "TypeScript", "Java", "Spring Boot", "Redis", "PostgreSQL", "AWS"].map((k) => (
-                    <Chip key={k} label={k} variant="outlined" sx={{ borderColor: alpha("#9b8cff", 0.5) }} />
-                ))}
-            </Box> */}
+
         </NeonCard>
     </Section>
 );
