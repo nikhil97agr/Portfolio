@@ -26,26 +26,6 @@ const fullScreenSelected: SxProps = {
     },
 }
 
-const smallScreenSelected: SxProps = {
-    position: "relative",
-    color: "#ffffff",
-    fontWeight: 500,
-    px: 2,
-    py: 1.5,
-    display: "inline-block",
-    textDecoration: "none",
-    "&::after": {
-        content: '""',
-        position: "absolute",
-        bottom: -6, // adjust spacing below text
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 6,
-        height: 6,
-        borderRadius: "50%",
-        backgroundColor: "#ffffff",
-    },
-}
 
 export const Header = () => {
     const isMobile = useMediaQuery('(max-width:700px)')
@@ -118,11 +98,11 @@ export const Header = () => {
                         onKeyDown={() => setOpen(false)}
                     >
                         <Stack spacing={2} sx={{ p: 2, textAlign: 'center' }} >
-                            <Box sx={activeId === "about" ? smallScreenSelected : {}}><NavLink href="#about"  >About</NavLink></Box>
-                            <Box sx={activeId === "experience" ? smallScreenSelected : {}}><NavLink href="#experience" >Experience</NavLink></Box>
-                            <Box sx={activeId === "skills" ? smallScreenSelected : {}}><NavLink href='#skills' >Skills</NavLink></Box>
-                            <Box sx={activeId === "cp" ? smallScreenSelected : {}}><NavLink href="#cp" >Competitive Programming</NavLink></Box>
-                            <Box sx={activeId === "education" ? smallScreenSelected : {}}><NavLink href="#education" >Education</NavLink></Box>
+                            <Box><NavLink href="#about"  >About</NavLink></Box>
+                            <Box><NavLink href="#experience" >Experience</NavLink></Box>
+                            <Box><NavLink href='#skills' >Skills</NavLink></Box>
+                            <Box><NavLink href="#cp" >Competitive Programming</NavLink></Box>
+                            <Box><NavLink href="#education" >Education</NavLink></Box>
                         </Stack>
                     </Box>
                 </Drawer>
